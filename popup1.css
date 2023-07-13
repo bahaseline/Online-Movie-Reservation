@@ -1,0 +1,121 @@
+/* εδω έχουμε το css για το log in και sign up form */
+
+.log-box {
+    width: 40%;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.2);
+    padding: 35px;
+    border: 2px solid #000;
+    border-radius: 20px/50px;
+    background-clip: padding-box;
+    text-align: center;
+    }
+    
+    .open-button {
+    font-size: 1em;
+    padding: 10px;
+    color: #000;
+    border: 2px solid #b30000;
+    border-radius: 20px/50px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    }
+   
+    .button:hover { /* ώστε όταν πατάς να αλλάζει χρώμα  */
+    background: #b30000;
+    }
+    
+    .popup-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    }
+    .popup-overlay:target {
+    visibility: visible;
+    opacity: 1;
+    }
+    /* για το login */
+    .log-popup {
+    margin: 100px auto;
+    padding: 20px;
+    background: #000;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    text-align: center;
+    }
+    
+    /* επεξεργασία heading2 */
+    .log-popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+    text-transform: uppercase;
+    }
+    .log-popup .close-window {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #b30000;
+    }
+
+    .log-popup .close-window:hover { /* ώστε όταν πατάς να αλλάζει χρώμα  */
+    color: #b30000 !important;
+    }
+    
+    .log-popup .log-content {
+    max-height: 30%;
+    overflow: auto;
+    }
+    
+/* για το button του log in και sign up */
+    .btn-logg {
+        font-size: 18px;
+        background: #b30000;
+        padding: 10px;
+        border: 0;
+        outline: 0;
+        display: inline;
+        color: #fff;
+        width: 60%;
+        border-radius: 50px;
+        margin-top: 13px;
+    }
+
+    .btn-main {
+        padding: 10px 30px;
+        border: 1px solid #b30000;
+        background: transparent;
+        color: #000 !important;
+        font-size: 22px;
+        border-radius: 50px;
+        margin-left: 10px;
+        padding: 20px ;
+        
+    }
+    
+    .btn-main-primary {
+        background-color: #b30000;
+        color: #fff !important;
+        text-align: center;
+        width: 20%;
+        margin-bottom: 120px;
+        margin-top: 45px;
+    }
+    
+    .btn-main:hover { /* ώστε όταν πατάς να αλλάζει χρώμα  */
+        background: #b30000;
+        color: #000;
+    }

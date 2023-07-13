@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+/* Γίνετε η css για την αρχική σελίδα και την εικόνα */
+.header{
+  width: 100%;
+  background:linear-gradient(to top, rgba(0,0,0, 0.5) 50% , rgba(0,0,0, 0.5) 50% ), url(images/Home-Alone-2.jpg);
+  height: 109vh;
+  background-position: center;
+  background-size: cover;
+}
+/* Γίνετε η css για το μενού που μπορεί να επιλέξει ο χρήστης */
+nav{
+    display: flex;
+    padding: 0% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Γίνετε η css για το μενού που μπορεί να επιλέξει ο χρήστης και συγκεκριμένα για το logo που έχουμε 
+τοποθετήσει πάνω αριστερά */
+nav img{
+    width: 100px;   
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+ 
+.nav-links ul li { 
+    padding: 8px 12px;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #b30000;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/* Σχεδιάζουμε το περιεχόμενο του κειμένου μαζι με το heading1 και την παράγραφο */
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: right;
+    
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: white;
+    
+}
+/*  Σχεδιάζουμε το button*/
+.hero-btn1{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #b30000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;  
+}
+
+.hero-btn1:hover{  /* ώστε όταν πατάς να αλλάζει χρώμα  */
+    border: 1px solid #b30000;
+    background:  #b30000;
+    transition: 1s ;  
+}
+
+nav .fa{
+    display: none;
+}
+
+
+
+
+
+/* Σχεδιαζουμε το κομμάτι που περιέχει το άλλο section με τις ταινιες */
+.moovie{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.movie-col{
+    flex-basis: 31%;
+    border-radius: 45px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.movie-col img{  /* επεξεργασία εικόνας */
+    width: 80%;
+    border-radius: 50px;
+    height: 50%;
+    padding: 20px;
+    margin-left: 40px;
+}
+
+.movie-col p{   /* επεξεργασία παραγράφου */
+    padding: 0;
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.movie-col h3{    /* επεξεργασία heading 3 */
+    font-size: 30px;
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+
+
+/* Δημιουργούμε την css για το boxes που περιέχουν τις ταινίες που μπορεί να επιλέξει ο χρήστης */
+.features{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+/* Δημιουργούμε την css για το boxes αλλά για την περιγραφή που περιέχουν τις ταινίες που μπορεί να επιλέξει ο χρήστης */
+.features h2{
+justify-content: center;
+width: 20%;
+height: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.feature-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* περιέχει το box μας */
+.feature-box{
+    background-color: #fff;
+    width: 300px;
+    height: 500px;
+    margin: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 10px 30px rgba(252,59,0,0.397);
+}
+/* Δημιουργούμε την css για το boxes (εικόνα) που περιέχουν τις ταινίες που μπορεί να επιλέξει ο χρήστης */
+.imgf{
+    width: 100%;
+    height: 63%;
+}
+ 
+.imgf img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Δημιουργούμε την css για το boxes το κείμενο που περιέχουν τις ταινίες που μπορεί να επιλέξει ο χρήστης */
+.textf{
+width: 5%;
+height: 10%;
+display: flex;
+padding-bottom: 30px;
+
+}
+
+
+/* Δημιουργούμε την css για το header των σελιδών contact.php και bookingsystem.php*/
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0, 0.5) 50% , rgba(0,0,0, 0.5) 50% ), url(images/photo13.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+/* Δημιουργούμε την css για το button που έχει στα boxes όπου είναι οι ταινίες που μπορεί να επιλέξει ο χρήστης */
+.feature-box .textf .mainbtn a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #b30000;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;  
+}
+
+.feature-box .textf .mainbtn a:hover{ /* ώστε όταν πατάς να αλλάζει χρώμα  */
+    border: 1px solid #b30000;
+    background:  #b30000;
+    transition: 1s ;
+}
+
+.mainbtn{
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #b30000;
+    padding: 12px 34px 45px;
+    margin: 60px 80px 70px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer; 
+}
+.mainbtn:hover{
+    border: 1px solid #b30000;
+    background:  #b30000;
+    transition: 1s ;  
+}
+
+
+/* Δημιουργούμε την css για το footer το οποίο είναι τοποθετημένο στο τέλος της κάθε σελίδας */
+
+footer {
+    background-color: #b30000;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  footer .col {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  footer h4 { /* για το heading */
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  footer li {
+    margin-bottom: 5px;
+  }
+  
+  footer a { /* to link */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  footer .social-links {
+    display: flex;
+  }
+  
+  footer .social-links li { 
+    margin-right: 10px;
+  }
+                                     /* τα social links */
+  footer .social-links i {
+    font-size: 20px;
+  }
+  
+  footer form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  footer form div {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  footer form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  
+  footer form button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #b30000;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  footer form button:hover {
+    background-color:
+    #7785;
+    color: #fff;
+    cursor: pointer;
+    transform: translateY(-2px);
+    box-shadow: 0px 5px 10px #ccc;
+  }
+  
+  footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+/* Δημιουργούμε την css για το contact.php page ξεκινώντας με τον χάρτη */
+  .location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-u{
+    width: 80%;
+    margin: auto;
+}
+
+.contact{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact div .fa{
+    font-size: 20px;
+    color:#b30000;
+    margin: 10%;
+    margin-right: 30px;
+}
+
+.contact div p{
+    padding: 0;
+}
+
+.contact div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #b30000;
+    font-weight: 400;
+}
+
+
+/* επεξεργασία του πίνακα */
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.table thead{
+    background-color: #b30000;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto; 
+    border-collapse: collapse; 
+}
+
+td {
+    padding: 20px; 
+}
+
+/* style the input fields */
+input[type=text], input[type=date] {
+    width: 100%; 
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+}
+
+/* Σχεδιάζουμε το submit button */
+input[type=submit] {
+    width: 100%; 
+    background-color: #b30000; /* προσθέτουμε το background-color */
+    color: white; 
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none; /* αφαιρούμε το border */
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+input[type=submit]:hover {
+    background-color: #b30000; /* αλλάζουμε το background όταν ακουμπάει πάνω */
+}
+
+/* για το slideshow */
+.mySlides {
+    width: 100%;
+    margin: 0 auto; /* για να το έχουμε στο κέντρο */
+  }
+  
+.textslide{
+    float: right;
+    padding-top: 0px auto;
+  }
+
+ 
