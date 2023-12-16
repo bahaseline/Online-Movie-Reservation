@@ -28,7 +28,7 @@ Clone the repository:
 
 #Copy code
 git clone
-git clone https://github.com/your-username/Online-Movie-Reservation.git
+git clone https://github.com/bahaseline/Online-Movie-Reservation.git
 Open the project in your preferred code editor.
 Set up a local server or deploy the project on a web server.
 
